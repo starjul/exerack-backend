@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 require("dotenv").config();
 mongoose
-  .connect("mongodb+srv://Starjul:Jell2540@sandbox.cyfjy.mongodb.net/exerack", {
+  .connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
